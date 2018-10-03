@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Sping-IOC]]></title>
+    <url>%2F2018%2F10%2F03%2FSping-IOC%2F</url>
+    <content type="text"><![CDATA[Sping的ioc操作1. 把对象的创建交给spring进行操作2. ioc操作两部分： ioc的配置文件方式 ioc的注解方式 ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理 12345678910public class UserService&#123; &#125;public class UserSrvlet&#123; //得到Userservice的对象 //原始:new创建 //使用ioc得到对象 UserFactory.getUserService();&#125; iOC实现 第一步：创建xml配置文件，配置要创建的对象类 1&lt;bean id = "userService" class = "com.bb.UerService"/&gt; 第二步：创建工厂类，使用dom4j解析配置文件+反射 123456789101112public class UserFactory&#123; public static UserService getUserService()&#123; //1.使用dom4j解析xml文件 //2.根据id值userService，得到id对应class属性值 String classValue = "class属性值"; //2.使用反射创建类对象 Class clazz = Class.forName(classValue); //3.创建类对象 UserService service = clazz.newInstance(); return service; &#125;&#125; 构造注入 属性注入 接口注入 第三方注入 ，Spring容器 通过xml配置自动注入原理是反射。]]></content>
+      <categories>
+        <category>SPRING</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+      </tags>
+  </entry>
+</search>
