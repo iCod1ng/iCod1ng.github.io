@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Sping的ioc操作1. 把对象的创建交给spring进行操作2.  ioc操作两部分： ioc的配置文件方式 ioc的注解方式  ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理  12345678910public class UserService&amp;#123;    &amp;#125;public class UserSrvlet&amp;#123;    //得到Users">
+<meta name="description" content="Sping的ioc操作把对象的创建交给spring进行操作ioc操作两部分： ioc的配置文件方式 ioc的注解方式  ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理  12345678910public class UserService&amp;#123;    &amp;#125;public class UserSrvlet&amp;#123;    //得到Userservice的">
 <meta name="keywords" content="Spring">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sping-IOC">
 <meta property="og:url" content="http://yoursite.com/2018/10/03/Sping-IOC/index.html">
-<meta property="og:site_name" content="言语">
-<meta property="og:description" content="Sping的ioc操作1. 把对象的创建交给spring进行操作2.  ioc操作两部分： ioc的配置文件方式 ioc的注解方式  ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理  12345678910public class UserService&amp;#123;    &amp;#125;public class UserSrvlet&amp;#123;    //得到Users">
+<meta property="og:site_name" content="BB‘s Coding">
+<meta property="og:description" content="Sping的ioc操作把对象的创建交给spring进行操作ioc操作两部分： ioc的配置文件方式 ioc的注解方式  ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理  12345678910public class UserService&amp;#123;    &amp;#125;public class UserSrvlet&amp;#123;    //得到Userservice的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-03T12:20:22.089Z">
+<meta property="og:updated_time" content="2018-10-04T10:53:05.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sping-IOC">
-<meta name="twitter:description" content="Sping的ioc操作1. 把对象的创建交给spring进行操作2.  ioc操作两部分： ioc的配置文件方式 ioc的注解方式  ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理  12345678910public class UserService&amp;#123;    &amp;#125;public class UserSrvlet&amp;#123;    //得到Users">
+<meta name="twitter:description" content="Sping的ioc操作把对象的创建交给spring进行操作ioc操作两部分： ioc的配置文件方式 ioc的注解方式  ioc底层原理 xml配置文件 dom4j解析xml 工厂设计模式 反射原理  12345678910public class UserService&amp;#123;    &amp;#125;public class UserSrvlet&amp;#123;    //得到Userservice的">
 
 
 
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -126,7 +126,7 @@
 
 
 
-  <title>Sping-IOC | 言语</title>
+  <title>Sping-IOC | BB‘s Coding</title>
   
 
 
@@ -156,7 +156,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">言语</span>
+        <span class="site-title">BB‘s Coding</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -290,13 +290,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/03/Sping-IOC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="言语">
+      <meta itemprop="name" content="BB">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/heaPhoto.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="言语">
+      <meta itemprop="name" content="BB‘s Coding">
     </span>
 
     
@@ -387,7 +387,7 @@
       
 
       
-        <h3 id="Sping的ioc操作"><a href="#Sping的ioc操作" class="headerlink" title="Sping的ioc操作"></a>Sping的ioc操作</h3><h4 id="1-把对象的创建交给spring进行操作"><a href="#1-把对象的创建交给spring进行操作" class="headerlink" title="1. 把对象的创建交给spring进行操作"></a>1. 把对象的创建交给spring进行操作</h4><h4 id="2-ioc操作两部分："><a href="#2-ioc操作两部分：" class="headerlink" title="2.  ioc操作两部分："></a>2.  ioc操作两部分：</h4><ul>
+        <h3 id="Sping的ioc操作"><a href="#Sping的ioc操作" class="headerlink" title="Sping的ioc操作"></a>Sping的ioc操作</h3><h4 id="把对象的创建交给spring进行操作"><a href="#把对象的创建交给spring进行操作" class="headerlink" title="把对象的创建交给spring进行操作"></a>把对象的创建交给spring进行操作</h4><h4 id="ioc操作两部分："><a href="#ioc操作两部分：" class="headerlink" title="ioc操作两部分："></a>ioc操作两部分：</h4><ul>
 <li>ioc的配置文件方式</li>
 <li>ioc的注解方式</li>
 </ul>
@@ -509,9 +509,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/heaPhoto.jpg"
-                alt="言语" />
+                alt="BB" />
             
-              <p class="site-author-name" itemprop="name">言语</p>
+              <p class="site-author-name" itemprop="name">BB</p>
               <p class="site-description motion-element" itemprop="description">Talk is cheap,show me the code.</p>
           </div>
 
@@ -577,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sping的ioc操作"><span class="nav-number">1.</span> <span class="nav-text">Sping的ioc操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-把对象的创建交给spring进行操作"><span class="nav-number">1.1.</span> <span class="nav-text">1. 把对象的创建交给spring进行操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ioc操作两部分："><span class="nav-number">1.2.</span> <span class="nav-text">2.  ioc操作两部分：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ioc底层原理"><span class="nav-number">2.</span> <span class="nav-text">ioc底层原理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sping的ioc操作"><span class="nav-number">1.</span> <span class="nav-text">Sping的ioc操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#把对象的创建交给spring进行操作"><span class="nav-number">1.1.</span> <span class="nav-text">把对象的创建交给spring进行操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ioc操作两部分："><span class="nav-number">1.2.</span> <span class="nav-text">ioc操作两部分：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ioc底层原理"><span class="nav-number">2.</span> <span class="nav-text">ioc底层原理</span></a></li></ol></div>
             
 
           </div>
@@ -601,7 +601,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">言语</span>
+  <span class="author" itemprop="copyrightHolder">BB</span>
 
   
 </div>
